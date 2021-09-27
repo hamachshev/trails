@@ -8,6 +8,9 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Trails | Learn anything, for free</title>
+      </Head>
       <Header />
       <MainOne />
       <Body />
