@@ -1,7 +1,7 @@
 import Image from "next/image";
 function Footer() {
   return (
-    <div className="bg-[#b3bdc6] w-[95vw] rounded-xl m-auto h-auto mb-5 flex items-center">
+    <div className="bg-[#fff] w-[95vw] rounded-xl m-auto h-auto mb-5 flex items-center shadow-2xl">
       <div className="pl-10">
         <Image src="/footer_logo.svg" width="75" height="75" />
       </div>
