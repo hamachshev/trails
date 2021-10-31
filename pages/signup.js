@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import { getInput } from "../components/auth.js";
 
 function login() {
   return (
@@ -16,16 +17,24 @@ function login() {
             type="text"
             name="email"
             placeholder="Email"
+            id="email"
             className="rounded-lg drop-shadow-lg m-10 mb-8 h-12 w-[300px] focus:ring-2 focus:ring-blue-600 input"
           />
           <input
             type="password"
             name="password"
+            id="password"
             placeholder="Password"
             className="rounded-lg drop-shadow-lg m-10 mt-0 h-12 w-[300px] focus:ring-2 focus:ring-blue-600 input"
           />
-          <button className="bg-[#0f54ef] text-white font-Inter font-semibold w-[177px] h-[46.5px] rounded-[100px] text-l m-auto mt-10 drop-shadow mb-6">
-            Login
+          <button
+            className="bg-[#0f54ef] text-white font-Inter font-semibold w-[177px] h-[46.5px] rounded-[100px] text-l m-auto mt-10 drop-shadow mb-6"
+            onClick={(e) => {
+              e.preventDefault();
+              getInput();
+            }}
+          >
+            Sign up
           </button>
         </form>
       </div>
